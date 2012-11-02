@@ -155,7 +155,7 @@ ul.nav-tabs li.child-page a {
 }
 .navbar-white .navbar-inner .container {
 	background-color: #ffffff;
-	height: 90px !important;
+	height: 90px;
 }
 .below-header {
 	height: 13px;
