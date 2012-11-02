@@ -645,6 +645,7 @@ strong {
 		max-width: 100%;
 		width: auto !important;
 		display: inline-block;
+		padding: 5px;
 	}
 
 	.span6 .image-border-container {
