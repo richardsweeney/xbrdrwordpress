@@ -837,4 +837,7 @@ strong {
 	.down, .shorter {
 		margin: 0px;
 	}
+	.navbar-white .navbar-inner .container {
+    height: auto !important;
+  }
 }
