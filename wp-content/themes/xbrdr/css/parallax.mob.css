@@ -168,7 +168,7 @@ iframe#maps-iframe {
 
 @media (max-width: 500px) {
 
-  .navbar-white .navbar-inner {
+  .navbar-white .navbar-inner .container {
     height: auto !important;
   }
 
