@@ -26,14 +26,16 @@ jQuery(function ($) {
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
     var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
     $('#chapter1-text').addClass('loaded');
-    $('#mobile-nav-toggle-switch').show();
-    $('#mobile-nav-toggle-switch').click(function () {
-      if ($navCollapse.hasClass('collapse')) {
-        $navCollapse.removeClass('collapse').addClass('visible');
-      } else {
-        $navCollapse.removeClass('visible').addClass('collapse');
-      }
-    });
+    if ($window.width() < 500) {
+      $('#mobile-nav-toggle-switch').show();
+      $('#mobile-nav-toggle-switch').click(function () {
+        if ($navCollapse.hasClass('collapse')) {
+          $navCollapse.removeClass('collapse').addClass('visible');
+        } else {
+          $navCollapse.removeClass('visible').addClass('collapse');
+        }
+      });
+    }
   }
   $('#chapter6-map').hide();
 });

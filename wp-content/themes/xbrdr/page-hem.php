@@ -164,7 +164,7 @@
           <ul class="chapter5-icons icons gom group-1">
             <li class="i-25 unique"><a href="<?php echo URL; ?>/produkter/xp1/#goto-21"><span>H&aring;llbar</span></a></li>
             <li class="i-27"><a href="<?php echo URL; ?>/produkter/xp1/#goto-12"><span>100 %<br />&aring;tervinningsbar</span></a></li>
-            <li  class="i-28 unique"><a href="<?php echo URL; ?>/produkter/xp1/#goto-23"><span>Rent, v&auml;rdefullt<br />stålskrot</span></a></li>
+            <li class="i-28 unique"><a href="<?php echo URL; ?>/produkter/xp1/#goto-23"><span>Rent, v&auml;rdefullt<br />stålskrot</span></a></li>
           </ul>
           <ul class="chapter5-icons icons gom group-2">
             <li class="i-26 unique"><a href="<?php echo URL; ?>/produkter/xp1/#goto-22"><span>Motst&aring;ndskraftig</span></a></li>
@@ -195,7 +195,7 @@
 
       <div class="laning-page map-block" id="chapter6-map">
         <img src="<?php echo IMG; ?>/karta.png" alt="map" />
-          <!-- The map is loaded via AJAX when the user scrolls here -->
+        <!-- The map is loaded via AJAX when the user scrolls here -->
       </div>
 
     </section>
