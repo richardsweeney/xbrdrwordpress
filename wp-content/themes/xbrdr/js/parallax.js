@@ -21,7 +21,7 @@ jQuery(function ($) {
   if (Modernizr.csstransitions === false) {
     $('.gom').hide();
   }
-  mobile = 'da bomb'; // for testing
+  //mobile = 'da bomb'; // for testing
   if (mobile) {
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
     $('.navbar-white .navbar-inner .container').removeClass('fix-height');
@@ -30,7 +30,6 @@ jQuery(function ($) {
       var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
       $('#mobile-nav-toggle-switch').show();
       $('#mobile-nav-toggle-switch').click(function () {
-        alert('clicked');
         if ($navCollapse.hasClass('collapse')) {
           $navCollapse.removeClass('collapse').addClass('visible');
         } else {
