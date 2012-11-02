@@ -7,6 +7,9 @@
   position: absolute;
   top: 0px;
   right: 0px;
+  background: transparent url(../mobile-nav-button.png) no repeat 0 0;
+  width: 40px;
+  height: 30px;
 }
 
 .image-container {
