@@ -13,17 +13,16 @@
  */
 (function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
 
-var mobile = false;
+var mobile = null;
 // Modernizr.csstransitions = false; // for testing
 
 jQuery(function ($) {
-  mobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
-  alert(mobile);
+  mobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone)/);
   // mobile = true; // for testing
   if (Modernizr.csstransitions === false) {
     $('.gom').hide();
   }
-  if (mobile === true) {
+  if (mobile) {
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
     var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
     $('#chapter1-text').addClass('loaded');
@@ -77,7 +76,7 @@ jQuery(window).load(function () {
       iFrameLoaded = false,
       secondPhase = false;
 
-	if (mobile === true) {
+	if (mobile) {
     var $icons = $('.icons li.unique').clone(),
         $mobileIconList = $('<ul id="mobile-icons-list" />');
 
