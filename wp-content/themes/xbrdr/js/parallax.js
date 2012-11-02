@@ -23,8 +23,8 @@ jQuery(function ($) {
     $('.gom').hide();
   }
   if (mobile === true) {
-    var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
+    var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
     $('#chapter1-text').addClass('loaded');
     $('#mobile-nav-toggle-switch').show();
     $('#mobile-nav-toggle-switch').click(function () {
@@ -76,8 +76,7 @@ jQuery(window).load(function () {
       iFrameLoaded = false,
       secondPhase = false;
 
-	if (mobile) {
-
+	if (mobile === true) {
     var $icons = $('.icons li.unique').clone(),
         $mobileIconList = $('<ul id="mobile-icons-list" />');
 
@@ -189,7 +188,6 @@ jQuery(window).load(function () {
             $lastPall.show();
           }
         }
-        console.log(chapter);
         if (chapter != lastChapter) {
           scrollFadeOutNextPhase(chapter, scrollTop);
         }
