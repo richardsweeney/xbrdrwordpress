@@ -25,7 +25,7 @@ jQuery(function ($) {
   if (mobile) {
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
     $('#chapter1-text').addClass('loaded');
-    if ($(window).width() < 700) {
+    if ($(window).width() < 500) {
       var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
       $('#mobile-nav-toggle-switch').show();
       $('#mobile-nav-toggle-switch').click(function () {
