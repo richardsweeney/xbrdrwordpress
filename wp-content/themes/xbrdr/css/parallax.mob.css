@@ -3,6 +3,12 @@
   min-width: 200px;
 }
 
+.navbar .btn-navbar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 .image-container {
   width: auto;
 }
