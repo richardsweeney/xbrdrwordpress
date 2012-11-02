@@ -24,6 +24,7 @@ jQuery(function ($) {
   }
   if (mobile) {
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
+    $('.navbar-white .navbar-inner .container').removeClass('fix-height');
     $('#chapter1-text').addClass('loaded');
     if ($(window).width() < 500) {
       var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');

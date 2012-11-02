@@ -51,7 +51,7 @@
 		<!--[if lt IE 8]><p class=chromeframe>Din webbläsare är <em>föråldrad!</em> <a href="http://browsehappy.com/">Uppgradera till en annan webbläsare</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		<div class="navbar navbar-white navbar-fixed-top">
 			<div class="navbar-inner">
-				<div class="container">
+				<div class="container fix-height">
 					<a id="mobile-nav-toggle-switch" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
