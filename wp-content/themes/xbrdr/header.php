@@ -60,7 +60,7 @@
 					<a class="brand" href="<?php echo URL; ?>" title="CrossBorder">
 						<img src="<?php header_image(); ?>" alt="<?php echo bloginfo('name'); ?>" />
 					</a>
-					<div class="nav-collapse collapse">
+					<div class="nav-container nav-collapse collapse">
 						<?php rps_print_main_navigation() ?>
 					</div>
 
