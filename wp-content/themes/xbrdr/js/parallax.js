@@ -24,9 +24,9 @@ jQuery(function ($) {
   }
   if (mobile) {
     $('head').append('<link rel="stylesheet" href="' + jsGlobals.templateDirectory + '/css/parallax.mob.css">');
-    var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
     $('#chapter1-text').addClass('loaded');
     if ($window.width() < 500) {
+      var $navCollapse = $('.nav-collapse').removeClass('nav-collapse');
       $('#mobile-nav-toggle-switch').show();
       $('#mobile-nav-toggle-switch').click(function () {
         if ($navCollapse.hasClass('collapse')) {
