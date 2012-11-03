@@ -12,26 +12,27 @@
 
 		<?php wp_head(); ?>
 
-		<!--css-->
-		<!--stylefix for ie-->
-		<!--[if lt IE 10]>
-		<style type="text/css">
-			.navbar-inner  { filter: none; }
-			.navbar-white .nav > .active > a { filter: none; }
-			#page { margin-top: 120px; max-width: 900px; }
-			.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 980px; }
-			.navbar-white .brand { display: block; float: left; padding: 15px 20px; margin-left: -20px; font-size: 20px; font-weight: 200; color: #707070; }
-			.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
-			.navbar-white .nav li { line-height: 61px; }
-			.below-header { height: 13px; width: 100%; margin-top:1px;}
-		</style>
-		<![endif]-->
-		<!-- JS for IE -->
-		<!--[if lt IE 9]>
-			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<?php if(!is_front_page()): ?>
+			<!--css-->
+			<!--stylefix for ie-->
+			<!--[if lt IE 10]>
+			<style type="text/css">
+				.navbar-inner  { filter: none; }
+				.navbar-white .nav > .active > a { filter: none; }
+				#page { margin-top: 120px; max-width: 900px; }
+				.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 980px; }
+				.navbar-white .brand { display: block; float: left; padding: 15px 20px; margin-left: -20px; font-size: 20px; font-weight: 200; color: #707070; }
+				.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
+				.navbar-white .nav li { line-height: 61px; }
+				.below-header { height: 13px; width: 100%; margin-top:1px;}
+			</style>
+			<![endif]-->
+			<!--[if lt IE 9]>
+				<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+				<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		<?php endif; ?>
 		<script>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-35754072-1']);
