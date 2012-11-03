@@ -31,7 +31,6 @@
 
       <div class="<?php echo $class; ?>">
         <div class="box-shadow">
-          <img src="<?php the_field('field_name'); ?>" alt="" />
           <!-- ok; What. The. FUCK?! Inline style element?!! This is to get the images to vertically align (sorry, sorry, sorry). -->
           <a href="<?php the_permalink(); ?>" title="<?php esc_attr(the_title()); ?>" style="background: url('<?php the_field('extra_bild'); ?>') no-repeat center center">
           </a>

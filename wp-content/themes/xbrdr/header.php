@@ -22,8 +22,7 @@
 			.navbar-white .brand { display: block; float: left; padding: 15px 20px; margin-left: -20px; font-size: 20px; font-weight: 200; color: #707070; }
 			.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
 			.navbar-white .nav li { line-height: 61px; }
-			.below-header { height: 13px; width: 100%; margin-top:1px; }
-			#news-bar { top: 91px }
+			.below-header { height: 13px; width: 100%; }
 		</style>
 		<![endif]-->
 		<?php if(!is_front_page()): ?>
