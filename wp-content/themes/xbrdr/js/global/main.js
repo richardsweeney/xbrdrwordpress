@@ -29,11 +29,6 @@ var cb = {
 		} else {
 			cb.device = 'desktop';
 		}
-
-		//$('#pagewrap').empty();
-		//$('#pagewrap').append(this.clone);
-		//var page = new cb.page();
-		//page.init();
 	});
 })(jQuery);
 
