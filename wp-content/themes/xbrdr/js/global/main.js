@@ -50,7 +50,7 @@ jQuery(function ($) {
 		var target = $(this).attr('data-id'),
 				$container = $('.show-hide-container');
 		$container.find('section').hide();
-		$('section#' + target).fadeIn(200);
+		$('#' + target).fadeIn(200);
 		e.preventDefault();
 	});
 

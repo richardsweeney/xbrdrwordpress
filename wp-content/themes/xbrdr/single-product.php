@@ -57,7 +57,7 @@
             <a href="#spec" data-id="spec" data-toggle="tab">Specifikation</a>
           </li>
         <?php endif; ?>
-        <li class="active">
+        <li class="js active">
           <a href="#fordelar" data-id="fordelar" data-toggle="tab">Fördelar</a>
         </li>
       </ul>
