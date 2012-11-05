@@ -25,6 +25,12 @@
 			.below-header { height: 13px; width: 100%; }
 		</style>
 		<![endif]-->
+		<!--[if lt IE 9]>
+			<style type="text/css">
+				#chapter-nav a { background: transparent url(<?php echo IMG; ?>/ie8-off.jpg) no-repeat 0 0; }
+				#chapter-nav li.current a { background: transparent url(<?php echo IMG; ?>/ie8-on.jpg) no-repeat 0 0; }
+			</style>
+		<![endif]-->
 		<?php if(!is_front_page()): ?>
 			<!--[if lt IE 9]>
 				<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
