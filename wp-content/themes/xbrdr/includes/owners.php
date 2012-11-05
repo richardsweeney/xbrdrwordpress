@@ -9,7 +9,7 @@
       $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
       ?>
       <?php if ($i == 4 || $i == 7 || $i == 10) echo '<div class="row-fluid">'; ?>
-        <div class="span4 well boardmember">
+        <div class="span4 well owner boardmember">
           <div class="thumbnail">
             <img src="<?php echo $image[0]; ?>" alt="<?php esc_attr(the_title()); ?>" />
           </div>
