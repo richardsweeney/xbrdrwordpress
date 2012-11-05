@@ -194,10 +194,17 @@
       </article>
 
       <div class="laning-page map-block" id="chapter6-map">
-        <img src="<?php echo IMG; ?>/karta.png" alt="map" />
+        <img class="gom" src="<?php echo IMG; ?>/karta.png" alt="map" />
         <!-- The map is loaded via AJAX when the user scrolls here -->
       </div>
 
+      <div class="parallax-footer gom">
+        <?php dynamic_sidebar('rps-footer-widget'); ?>
+      </div>
     </section>
+    <?php wp_footer(); ?>
+  </div>
+  </body>
+</html>
 
-    <?php get_footer(); ?>
+    <?php // get_footer(); ?>

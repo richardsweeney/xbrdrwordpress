@@ -63,7 +63,8 @@ jQuery(window).load(function () {
       $c3Content = $('#chapter3-text, #chapter3-image, .chapter3-icons-container ul').addClass('gom'),
       $c4Content = $('#chapter4-text, #chapter4-image, .chapter4-icons-container ul').addClass('gom'),
       $c5Content = $('#chapter5-text, #chapter5-image, .chapter5-icons-container ul').addClass('gom'),
-      $c6Content = $('#chapter6-text, #chapter6-map'),
+      $c6Content = $('#chapter6-text, #chapter6-map, .parallax-footer'),
+      $parallaxFooter = $('.parallax-footer').hide(),
       allContent = [$c1Content, $c2Content, $c3Content, $c4Content, $c5Content, $c6Content],
       allContentLength = allContent.length,
       $scrollArrow = $('.scroll-arrow'),
@@ -227,6 +228,7 @@ jQuery(window).load(function () {
               .addClass('visa')
               .css({ 'top': 1500, 'opacity': 0 })
               .animate({ 'top': topPosition, 'opacity': 1 }, 500);
+            $parallaxFooter.removeClass('gom').fadeIn(600);
             if (iFrameLoaded === false) {
               $mapCanvas.fadeIn(300);
               iFrameLoaded = true;
@@ -240,6 +242,7 @@ jQuery(window).load(function () {
               .css({ 'top': 1500, 'opacity': 0 })
               .delay(500)
               .animate({ 'top': topPosition, 'opacity': 1 }, 500);
+            $parallaxFooter.hide();
             }
           if (Modernizr.csstransitions === false) {
             $('#chapter' + j + '-image, .chapter' + j + '-icons-container ul').hide().fadeIn('slow');

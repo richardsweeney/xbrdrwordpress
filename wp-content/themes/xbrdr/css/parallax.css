@@ -183,7 +183,7 @@ h2.heading-2{font-size:24px; line-height: 1.3; margin-bottom: 3px;}
 }
 
 .right-content {
-  height: 550px;
+  height: 420px;
 }
 
 .image-container {
@@ -489,7 +489,7 @@ li.i-28 a {
 
 #chapter6-block {
   position: relative;
-  min-height: 500px;
+  min-height: 300px;
 }
 #chapter6-text {
   position: fixed;
@@ -518,12 +518,26 @@ img {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-iframe#maps-iframe {
-  margin-top: 0px;
-  width: 100%;
-  height: 100%;
+.parallax-footer {
+  position: fixed;
+  top: 570px;
+  width: 940px;
+  left: 50%;
+  margin-left: -470px;
+  padding-top: 30px;
+  border-top: 1px solid #e5e5e5;
 }
-
+.parallax-footer.gom {
+  display: none;
+}
+.parallax-footer p {
+  font-size: 11px;
+  color: #999999;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  line-height: 16px;
+}
 
 .thumbnail {
   border:none 0px;
