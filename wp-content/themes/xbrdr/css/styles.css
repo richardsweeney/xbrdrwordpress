@@ -772,6 +772,13 @@ strong {
 		display: none;
 	}
 
+	.boardmember,
+	.well,
+	.owner {
+		min-height: auto;
+		height: auto;
+	}
+
 
 /* tabbar mobiler */
 
