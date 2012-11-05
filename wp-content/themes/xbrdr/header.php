@@ -8,7 +8,7 @@
 		<link rel="shortcut icon" href="<?php echo IMG; ?>/favicon.ico">
 		<meta name="description" content="" />
 		<meta name="author" content="Emma Larsson, ID kommunikation ab" />
-		<meta name ="viewport" content ="initial-scale=1.0 width=device-width">
+		<meta name="viewport" content="initial-scale=1.0 width=device-width">
 
 		<?php wp_head(); ?>
 		<!--css-->
