@@ -28,7 +28,7 @@
               <h1 class="news-item-header"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
               <time datetime="<?php the_time('Y-m-d'); ?>"><strong><?php the_time('j F, Y'); ?></strong></time>
             </header>
-            <?php $options = array('link' => false, 'words' => 60) ?>
+            <?php $options = array('link' => true, 'words' => 60) ?>
             <?php rps_nicer_excerpt($options); ?>
           </div>
         </article>

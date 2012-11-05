@@ -23,10 +23,14 @@
     endwhile; wp_reset_query();
     $args = array('post_type' => 'test', 'posts_per_page' => '-1');
     $query = new WP_Query($args);
+    $i = 0;
     while ($query->have_posts()): $query->the_post();
       $image = get_field('extra_image');
       $excerpt = get_post_meta($post->ID, '_test-excerpt', true);
+      if (($i % 2) == 0):
     ?>
+      </div><div class="row-fluid spaceme">
+      <?php endif; ?>
       <div class="span6 testbox">
         <?php if ($image): ?>
         <div class="image-border-container">
@@ -39,7 +43,7 @@
         <p><?php echo $excerpt; ?></p>
       </div>
 
-  <?php endwhile; ?>
+  <?php $i++; endwhile; ?>
 
   </div>
 

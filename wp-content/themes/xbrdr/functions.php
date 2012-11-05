@@ -814,7 +814,7 @@ function rps_nicer_excerpt($args = array()) {
 		'ellipsis' => '&hellip;',
 		'link' => true,
 		'linkClass' => 'read-more-link',
-		'linkText' => __('Läs hela inlägg', 'xbrdr'),
+		'linkText' => __('Läs mer', 'xbrdr'),
 		'linkContainer' => 'p',
 		'allowedTags' => '<p><a><i><em><b><strong><ul><ol><li><span><blockquote>'
 	);
