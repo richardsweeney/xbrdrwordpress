@@ -890,7 +890,8 @@ strong {
   }
 
   .table td {
-  	padding: 2px;
+  	padding: 2px!important;
+  	max-width: 80px !important;
   }
 
 }
