@@ -23,7 +23,7 @@
 			.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
 			.navbar-white .nav li { line-height: 61px; }
 			.below-header { height: 13px; width: 100%; }
-			#page { background: #ddd; }
+			.image-border-container, .box-shadow { max-width: 100% !important;}
 		</style>
 		<![endif]-->
 		<!--[if lt IE 9]>
