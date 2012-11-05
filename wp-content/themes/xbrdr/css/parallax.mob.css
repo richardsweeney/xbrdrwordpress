@@ -75,7 +75,7 @@ li.sequence, .chapter {
   top: -50px;
   left: 120px;
   z-index: -1;
-  max-width: 380px;
+  max-width: 100%;
 }
 
 .image-with-pointers {
