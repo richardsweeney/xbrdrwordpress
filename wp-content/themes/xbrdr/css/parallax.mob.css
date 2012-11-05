@@ -7,7 +7,6 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  /*background: pink url(../mobile-nav-button.png) no repeat 0 0;*/
   width: 20px;
   height: 20px;
 }
@@ -52,7 +51,7 @@
 
 #chapter1-text {
   position: static;
-  background: none
+  background: none;
 }
 
 li.sequence, .chapter {
@@ -61,7 +60,6 @@ li.sequence, .chapter {
 
 #chapter1-block {
   height: auto;
-  padding-top: 300px;
 }
 .scroll-arrow {
   display: none;
@@ -70,8 +68,17 @@ li.sequence, .chapter {
   display: none;
 }
 
-#unbuild li img {
-  position: absolute;
+#unbuild {
+  margin: 0;
+}
+
+ul#unbuild img {
+  position: static !important;
+  margin-bottom: -100px;
+}
+
+#unbuild li {
+  position: relative;
   top: -50px;
   left: 120px;
   z-index: -1;
