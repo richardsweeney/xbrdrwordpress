@@ -61,7 +61,7 @@ li.sequence, .chapter {
 
 #chapter1-block {
   height: auto;
-  padding-top: 0;
+  padding-top: 300px;
 }
 .scroll-arrow {
   display: none;
@@ -71,9 +71,11 @@ li.sequence, .chapter {
 }
 
 #unbuild li img {
-  position: static;
-  margin: -25px auto -60px;
-  max-width: 100%;
+  position: absolute;
+  top: -50px;
+  left: 120px;
+  z-index: -1;
+  max-width: 380px;
 }
 
 .image-with-pointers {
@@ -227,6 +229,10 @@ iframe#maps-iframe {
   }
   #menu-primara-lankar a:hover {
     color: #fff;
+  }
+
+  #chapter6-text address {
+    padding-top: 0;
   }
 
 }

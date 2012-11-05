@@ -891,4 +891,9 @@ strong {
 	.navbar-white .navbar-inner .container {
     height: auto !important;
   }
+
+  .owner {
+  	height: auto !important;
+  }
+
 }
