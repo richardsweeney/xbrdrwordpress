@@ -27,7 +27,6 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  behavior: url("PIE.htc");
 }
 #chapter-nav a:active {
   outline: none;

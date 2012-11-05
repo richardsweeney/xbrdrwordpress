@@ -9,8 +9,6 @@
           <div class="span3">
             <h1><?php _e('Produkter', 'xbrdr'); ?></h1>
           </div>
-          <div class="span6 offset3">
-          </div>
         </div>
       </div>
     </div>
@@ -59,7 +57,7 @@
             <a href="#spec" data-id="spec" data-toggle="tab">Specifikation</a>
           </li>
         <?php endif; ?>
-        <li class="active padd-right">
+        <li class="active">
           <a href="#fordelar" data-id="fordelar" data-toggle="tab">Fördelar</a>
         </li>
       </ul>

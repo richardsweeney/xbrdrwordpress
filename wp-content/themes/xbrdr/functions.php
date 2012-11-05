@@ -143,17 +143,20 @@ function blank_version() {
 
 
 /** Tidy up the main navigation code */
-function rps_print_main_navigation() {
+function rps_print_main_navigation($tests = false) {
+  $walker = ($tests) ? new rps_test_nav_walker() : new rps_nav_walker();
+  $menuClass = ($tests) ? 'side-menu' : 'nav';
+  $id = ($tests) ? 'tests-menu' : '';
 	$defaults = array(
 		'menu'            => 'Primära Länkar',
 		'container'       => '',
 		'container_class' => '',
 		'container_id'    => '',
-		'menu_class'      => 'nav',
-		'menu_id'					=> '',
+		'menu_class'      => $menuClass,
+		'menu_id'					=> $id,
 		'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 		'depth'           => 0,
-		'walker'     => new rps_nav_walker(),
+		'walker'          => $walker,
 	);
 	return wp_nav_menu($defaults);
 }
@@ -207,6 +210,58 @@ class rps_nav_walker extends Walker_Nav_Menu {
 }
 
 
+/** Custom navigation function to add active classes to stuff */
+class rps_test_nav_walker extends Walker_Nav_Menu {
+  function start_el(&$output, $item, $depth, $args) {
+    global $wp_query, $post;
+    $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+    $class_names = $value = '';
+    $testCenter = ($post->post_type == 'test' && strtolower($item->post_title) == 'testcenter');
+
+    $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+    $classes[] = 'menu-item-' . $item->ID;
+    if ($testCenter) {
+      $classes[] = 'active';
+    }
+
+    $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+    $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+
+    $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
+    $id = $id ? ' id="' . esc_attr( $id ) . '"  ' : '';
+
+    $output .= $indent . '<li' . $id . $value . $class_names .'>';
+
+    $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+    $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+    $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+    $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+    $item_output = $args->before;
+    $item_output .= '<a'. $attributes .'>';
+    $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+    $item_output .= '</a>';
+    if ($testCenter) {
+      $currentPostName = $post->post_name;
+      $queryArgs = array('post_type' => 'test', 'posts_per_page' => '-1');
+      $query = new WP_Query($queryArgs);
+      $subMenu = '<ul class="sub-menu side-menu">';
+      while ($query->have_posts()) {
+        $query->the_post();
+        $activeLink = ($currentPostName == $post->post_name) ? 'active-link' : '';
+        $subMenu .= '<li class="' . $activeLink . '"><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+      }
+      wp_reset_query();
+      $subMenu .= '</ul>';
+      $item_output .= $subMenu;
+    }
+    $item_output .= $args->after;
+
+    $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+  }
+}
+
 /** Tidy up secondary main navigation code */
 function rps_get_secondary_navigation() {
 	$defaults = array(
@@ -234,8 +289,6 @@ class rps_nav_two_walker extends Walker_Nav_Menu {
 
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		$classes[] = 'menu-item-' . $item->ID;
-
-		d($item);
 
 		if ($post->post_type == 'post' && strtolower($item->title) == 'press') {
 			$classes[] = 'child-page';
@@ -290,6 +343,7 @@ function rps_print_secondary_navigation() {
 }
 
 
+
 /** Parallax navigation for landing page */
 function rps_print_parallax_navigation() {
 ?>
@@ -315,7 +369,7 @@ function rps_print_parallax_navigation() {
 }
 
 
-/** Breadcrumb navigation */
+/** Breadcrumb navigation for om-oss etc */
 function rps_print_breadcrumbs() {
 	global $post;
  	if ($post->post_parent != '') {
@@ -332,6 +386,20 @@ function rps_print_breadcrumbs() {
 		</p>
 		<?php
 	}
+}
+
+/** Different breadcrumbs for tests pages */
+function rps_print_test_breadcrumbs() {
+  global $post;
+  ?>
+    <p class="breadcrumb-navigation test-breadcrumbs">
+      <a href="<?php echo URL; ?>">xbrdr.com</a>
+      <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+      <a href="<?php echo URL; ?>/testcenter/"><?php _e('Testcenter'); ?></a>
+      <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+      <a class="active" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+  </p>
+  <?php
 }
 
 

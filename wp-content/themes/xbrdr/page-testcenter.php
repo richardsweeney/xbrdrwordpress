@@ -24,15 +24,17 @@
     $args = array('post_type' => 'test', 'posts_per_page' => '-1');
     $query = new WP_Query($args);
     while ($query->have_posts()): $query->the_post();
-      $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+      $image = get_field('extra_image');
       $excerpt = get_post_meta($post->ID, '_test-excerpt', true);
     ?>
       <div class="span6 testbox">
+        <?php if ($image): ?>
         <div class="image-border-container">
           <a href="<?php the_permalink(); ?>">
-            <img class="image-border" src="<?php echo $image[0]; ?>" alt="<?php esc_attr(the_title()); ?>" />
+            <img class="image-border" src="<?php echo $image; ?>" alt="<?php esc_attr(the_title()); ?>" />
           </a>
         </div>
+        <?php endif; ?>
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p><?php echo $excerpt; ?></p>
       </div>
