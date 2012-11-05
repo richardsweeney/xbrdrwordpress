@@ -185,6 +185,15 @@ iframe#maps-iframe {
   transition: all 0.3s ease-in-out;
 }
 
+.parallax-footer {
+  position: static;
+  width: auto;
+  left: 0;
+  margin-left: 0;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
 
 @media (max-width: 500px) {
 
