@@ -30,6 +30,9 @@
 				#chapter-nav a { background: transparent url(<?php echo IMG; ?>/ie8-off.jpg) no-repeat 0 0; }
 				#chapter-nav a:hover, #chapter-nav li.current a { background: transparent url(<?php echo IMG; ?>/ie8-on.jpg) no-repeat 0 0; }
 				.image-border-container, .box-shadow { border: 1px solid #ccc; }
+				#page {
+					background: #ddd;
+				}
 			</style>
 		<![endif]-->
 		<?php if(!is_front_page()): ?>
