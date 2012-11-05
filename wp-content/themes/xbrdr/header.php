@@ -17,26 +17,26 @@
 		<style type="text/css">
 			.navbar-inner  { filter: none; }
 			.navbar-white .nav > .active > a { filter: none; }
-			#page { margin-top: 120px; max-width: 900px; }
-			.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 980px; }
+			#page { margin-top: 120px; max-width: 940px; }
+			.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { max-width: 940px; }
 			.navbar-white .brand { display: block; float: left; padding: 15px 20px; margin-left: -20px; font-size: 20px; font-weight: 200; color: #707070; }
 			.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
 			.navbar-white .nav li { line-height: 61px; }
 			.below-header { height: 13px; width: 100%; }
 			.image-border-container img, .box-shadow { max-width: 100% !important;}
+			#news-bar { left: 0; }
 		</style>
 		<![endif]-->
 		<!--[if lt IE 9]>
 			<style type="text/css">
 				#chapter-nav a { background: transparent url(<?php echo IMG; ?>/ie8-off.jpg) no-repeat 0 0; }
 				#chapter-nav a:hover, #chapter-nav li.current a { background: transparent url(<?php echo IMG; ?>/ie8-on.jpg) no-repeat 0 0; }
-				.image-border-container img, .box-shadow { border: 1px solid #ccc; max-width: 900px !important; }
+				.image-border-container img, .box-shadow { border: 1px solid #ccc; }
 			</style>
 		<![endif]-->
 		<?php if(!is_front_page()): ?>
 			<!--[if lt IE 9]>
 				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-				<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 			<![endif]-->
 		<?php endif; ?>
 				<!--<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>

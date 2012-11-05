@@ -512,9 +512,6 @@ img {
   margin: 50px 0 0 -200px;
   width: 440px;
   height: 295px;
-  padding: 10px;
-  border-radius: 3px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .parallax-footer {
@@ -550,7 +547,7 @@ strong { color:#76b729; }
 
 #page,
 .navbar-white .navbar-inner .container {
-  min-width: 960px;
+  min-width: 940px;
 }
 .navbar-white .navbar-inner .container.fix-height {
   height: 90px !important;

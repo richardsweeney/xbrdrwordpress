@@ -193,7 +193,7 @@
         <?php echo $pushes[5]['text']; ?>
       </article>
 
-      <div class="laning-page map-block" id="chapter6-map">
+      <div class="laning-page map-block image-border-container" id="chapter6-map">
         <img src="<?php echo IMG; ?>/karta.png" alt="map" />
         <!-- The map is loaded via AJAX when the user scrolls here -->
       </div>
