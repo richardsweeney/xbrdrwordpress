@@ -23,6 +23,7 @@
 			.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
 			.navbar-white .nav li { line-height: 61px; }
 			.below-header { height: 13px; width: 100%; }
+			#page { background: #ddd; }
 		</style>
 		<![endif]-->
 		<!--[if lt IE 9]>
@@ -30,9 +31,6 @@
 				#chapter-nav a { background: transparent url(<?php echo IMG; ?>/ie8-off.jpg) no-repeat 0 0; }
 				#chapter-nav a:hover, #chapter-nav li.current a { background: transparent url(<?php echo IMG; ?>/ie8-on.jpg) no-repeat 0 0; }
 				.image-border-container, .box-shadow { border: 1px solid #ccc; }
-				#page {
-					background: #ddd;
-				}
 			</style>
 		<![endif]-->
 		<?php if(!is_front_page()): ?>
