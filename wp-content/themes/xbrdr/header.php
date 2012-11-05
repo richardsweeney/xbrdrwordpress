@@ -23,19 +23,20 @@
 			.navbar-white .nav { font-size: 14px; font-weight: 600; margin-top: 35px; float: right; }
 			.navbar-white .nav li { line-height: 61px; }
 			.below-header { height: 13px; width: 100%; }
-			.image-border-container, .box-shadow { max-width: 100% !important;}
+			.image-border-container img, .box-shadow { max-width: 100% !important;}
 		</style>
 		<![endif]-->
 		<!--[if lt IE 9]>
 			<style type="text/css">
 				#chapter-nav a { background: transparent url(<?php echo IMG; ?>/ie8-off.jpg) no-repeat 0 0; }
 				#chapter-nav a:hover, #chapter-nav li.current a { background: transparent url(<?php echo IMG; ?>/ie8-on.jpg) no-repeat 0 0; }
-				.image-border-container, .box-shadow { border: 1px solid #ccc; }
+				.image-border-container img, .box-shadow { border: 1px solid #ccc; max-width: 900px !important; }
 			</style>
 		<![endif]-->
 		<?php if(!is_front_page()): ?>
 			<!--[if lt IE 9]>
 				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 			<![endif]-->
 		<?php endif; ?>
 				<!--<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>

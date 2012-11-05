@@ -198,7 +198,7 @@ ul.nav-tabs li.child-page a {
   box-shadow: 0 15px 2px -14px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.image-border-container {
+.image-border-container img {
 	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
