@@ -205,7 +205,6 @@ ul.nav-tabs li.child-page a {
 	position: relative;
 	padding: 10px;
 	border-radius: 4px;
-	max-width: 940px;
 	width: auto !important;
 	z-index: 1000;
 	-webkit-box-shadow: 0 15px 4px -13px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2);
