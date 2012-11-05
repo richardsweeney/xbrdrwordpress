@@ -46,5 +46,11 @@
   <?php $i++; endwhile; ?>
 
   </div>
+  <div class="row-fluid left-margin-imgs spaceme">
+    <div class="span12">
+      <h3><?php _e('Kontakta oss för tester', 'xbrdr'); ?></h3>
+      <p><?php _e('Välkommen att kontakta oss för tester, med befintlig gods från oss eller er - eller både och.', 'xbrdr'); ?></p>
+    </div>
+  </div>
 
 <?php get_footer(); ?>
