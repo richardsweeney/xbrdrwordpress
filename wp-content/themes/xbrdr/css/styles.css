@@ -779,6 +779,10 @@ strong {
 		height: auto;
 	}
 
+	.testbox .image-border-container img {
+		margin-bottom: 0;
+	}
+
 
 /* tabbar mobiler */
 
