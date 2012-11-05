@@ -29,7 +29,7 @@
       $excerpt = get_post_meta($post->ID, '_test-excerpt', true);
       if (($i % 2) == 0):
     ?>
-      </div><div class="row-fluid spaceme">
+      </div><div class="row-fluid">
       <?php endif; ?>
       <div class="span6 testbox">
         <?php if ($image): ?>
