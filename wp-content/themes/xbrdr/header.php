@@ -29,16 +29,16 @@
 			<style type="text/css">
 				#chapter-nav a { background: transparent url(<?php echo IMG; ?>/ie8-off.jpg) no-repeat 0 0; }
 				#chapter-nav a:hover, #chapter-nav li.current a { background: transparent url(<?php echo IMG; ?>/ie8-on.jpg) no-repeat 0 0; }
-				.image-border-container { border: 1px solid #ccc; }
+				.image-border-container { border: 1px solid #ccc;§ }
 			</style>
 		<![endif]-->
 		<?php if(!is_front_page()): ?>
 			<!--[if lt IE 9]>
-				<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-				<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 		<?php endif; ?>
+				<!--<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+				<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>-->
 		<script>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-35754072-1']);
