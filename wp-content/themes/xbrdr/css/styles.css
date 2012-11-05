@@ -424,6 +424,9 @@ strong {
 .owner {
 	height: 500px;
 }
+.owner h3 {
+	font-size: 17px;
+}
 .property {
 	height: 290px;
 }
