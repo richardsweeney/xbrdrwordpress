@@ -1,27 +1,27 @@
-.postbox .inside {
+#rps-meta .inside {
   padding-left:  10px;
 }
 
-.postbox .inside label {
+#rps-meta .inside label {
   display: block;
   font-weight: bold;
   margin: 15px 0 5px 3px;
 }
 
-.postbox .inside input[type="text"],
-.postbox .inside input[type="email"],
-.postbox .inside input[type="number"],
-.postbox .inside input[type="tel"] {
+#rps-meta .inside input[type="text"],
+#rps-meta .inside input[type="email"],
+#rps-meta .inside input[type="number"],
+#rps-meta .inside input[type="tel"] {
   width: 450px;
   margin-bottom: 10px;
   padding: 8px;
 }
 
-.postbox .inside input[type="number"] {
+#rps-meta .inside input[type="number"] {
   width: 225px;
 }
 
-.postbox .inside textarea {
+#rps-meta .inside textarea {
   width: 450px;
   height: 150px;
   margin-bottom: 10px;

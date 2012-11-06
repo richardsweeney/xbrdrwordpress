@@ -500,7 +500,7 @@ add_filter('enter_title_here', 'rps_change_default_title');
 function rps_add_meta_boxes() {
 	global $post;
 	add_meta_box(
-		'produkt-meta',
+		'rps-meta',
 		__('Produkt Meta', 'xbrdr'),
 		'rps_print_produkt_meta',
 		'product',
@@ -508,7 +508,7 @@ function rps_add_meta_boxes() {
 		'high'
 	);
 	add_meta_box(
-		'test-meta',
+		'rps-meta',
 		__('Test Meta', 'xbrdr'),
 		'rps_print_test_meta',
 		'test',
@@ -516,7 +516,7 @@ function rps_add_meta_boxes() {
 		'high'
 	);
 	add_meta_box(
-		'styrelse-meta',
+		'rps-meta',
 		__('Styrelse Meta', 'xbrdr'),
 		'rps_print_styrelse_meta',
 		'commitee_member',
@@ -524,7 +524,7 @@ function rps_add_meta_boxes() {
 		'high'
 	);
 	add_meta_box(
-		'contact-meta',
+		'rps-meta',
 		__('Kontakt Meta', 'xbrdr'),
 		'rps_print_contact_meta',
 		'contact',
@@ -533,7 +533,7 @@ function rps_add_meta_boxes() {
 	);
 	if ($post->post_name === 'kontakt') {
 		add_meta_box(
-			'contact-meta',
+			'rps-meta',
 			__('Kontakt Meta', 'xbrdr'),
 			'rps_print_contact_page_meta',
 			'page',
