@@ -656,6 +656,15 @@ function rps_save_custom_meta() {
 add_action('save_post', 'rps_save_custom_meta');
 
 
+/** Stop WordPress from hardcoding width and height attributes */
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', '', $html );
+   return $html;
+}
+add_filter('post_thumbnail_html', 'remove_width_attribute', 10);
+add_filter('image_send_to_editor', 'remove_width_attribute', 10);
+
+
 /** Get product information for respective products */
 function rps_get_product_information() {
 	global $post;
