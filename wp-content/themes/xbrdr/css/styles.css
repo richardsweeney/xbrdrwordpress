@@ -198,7 +198,11 @@ ul.nav-tabs li.child-page a {
   box-shadow: 0 15px 2px -14px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.image-border-container img {
+.image-border-container img,
+img.alignright,
+img.alignleft,
+img.aligncenter,
+img.alignnone {
 	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -552,6 +556,15 @@ strong {
 	-o-border-radius: 2px;
 	border-radius: 2px;
 }
+
+
+img.alignright {float:right; margin:0 0 1em 1em;}
+img.alignleft {float:left; margin:0 1em 1em 0;}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+img.alignnone {margin: 0 0 1em 0;}
+a img.alignright {float:right; margin:0 0 1em 1em;}
+a img.alignleft {float:left; margin:0 1em 1em 0;}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
 
 /* Large desktop */
 @media (min-width: 980px) {
