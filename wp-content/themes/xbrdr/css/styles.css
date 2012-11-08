@@ -66,6 +66,10 @@ p.ingress {
 	padding: 0 15% 10px;
 }
 
+p.green-ps {
+	color: #76b729;
+	margin-bottom: 0;
+}
 
 .larger-text p {
 	line-height: 20px;
