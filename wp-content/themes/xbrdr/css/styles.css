@@ -570,6 +570,12 @@ a img.alignright {float:right; margin:0 0 1em 1em;}
 a img.alignleft {float:left; margin:0 1em 1em 0;}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
 
+
+h3.table-icon { padding: 5px 0 5px 50px; }
+h3.static-load { background: url(../images/icons/ikon_statisk.jpg) no-repeat left center; }
+h3.dynamic-load { background: url(../images/icons/ikon_dynamisk.jpg) no-repeat left center; }
+h3.pall-load { background: url(../images/icons/ikon_pallstall.jpg) no-repeat left center; }
+
 /* Large desktop */
 @media (min-width: 980px) {
 	#page {
@@ -909,9 +915,14 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
   	height: auto !important;
   }
 
-  .table td {
-  	padding: 2px!important;
-  	max-width: 80px !important;
+  table.table h4 {
+  	font-weight: normal;
+  	font-size: 14px;
   }
+
+  h3.table-icon { padding: 0; }
+	h3.static-load,
+	h3.dynamic-load,
+	h3.pall-load { background: none; }
 
 }
