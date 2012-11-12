@@ -18,9 +18,9 @@
 }*/
 
 #chapter-nav{position:absolute; right:20px; top:170px; width:18px; list-style: none;}
-#chapter-nav li{float:left; width:100%; padding:0 0 5px; font-size:11px; line-height:18px; }
+#chapter-nav li{float:left; width:100%; padding:0 0 3px; font-size:11px; line-height:18px; }
 #chapter-nav a{float:left; width:100%; height:18px; background:#d6dbe6; color:#fff; text-align:center; position:relative;}
-#chapter-nav a span{color:#999; position:absolute; width:150px; left:-162px; top:0; text-align:right; display:none; font-weight:bold;}
+#chapter-nav a span{color:#999; position:absolute; width:150px; left:-162px; top:-2px; text-align:right; display:none; font-weight:bold; height: 20px;}
 #chapter-nav a:hover, #chapter-nav li.current a{background:#adb8cd;}
 #chapter-nav a:hover span, #chapter-nav li.current a span{display:block;}
 #chapter-nav a {
@@ -28,8 +28,9 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-#chapter-nav a:active {
-  outline: none;
+#chapter-nav a:active,
+#chapter-nav li.current a {
+  outline: none !important;
 }
 
 .container {
@@ -494,6 +495,10 @@ li.i-28 a {
   position: fixed;
   top: 0;
   width: 220px;
+}
+
+#chapter6-text h3 {
+  margin: 30px 0 0;
 }
 
 iframe {

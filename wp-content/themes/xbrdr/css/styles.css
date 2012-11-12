@@ -436,7 +436,14 @@ strong {
 	font-size: 17px;
 }
 .property {
+	position: relative;
 	height: 290px;
+}
+a.ancor {
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: -150px;
 }
 .testbox {
 	margin-bottom: 30px;

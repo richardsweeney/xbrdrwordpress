@@ -681,10 +681,11 @@ function rps_get_product_information() {
           </div><div class="row-fluid spaceme">
           <?php endif; ?>
           <div class="span4 well property">
+            <a class="ancor" id="goto-<?php echo($i + 1); ?>" href="#">&nbsp;</a>
             <span class="well-icon">
               <img src="<?php echo $property['icon']; ?>" alt="<?php echo esc_attr($property['title']); ?>">
             </span>
-            <h3 id="goto-<?php echo($i + 1); ?>">
+            <h3>
               <?php echo $property['titel']; ?>
             </h3>
             <?php echo $property['text']; ?>
