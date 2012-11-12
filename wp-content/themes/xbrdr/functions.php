@@ -379,9 +379,9 @@ function rps_print_breadcrumbs() {
 		?>
 		<p class="breadcrumb-navigation">
 			<a href="<?php echo URL; ?>">xbrdr.com</a>
-			<img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+			<img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="*" />
 			<a href="<?php echo $parentPermalink; ?>/detta-ar-crossborder/"><?php echo $parentTitle; ?></a>
-			<img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+			<img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="*" />
 			<a class="active" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</p>
 		<?php
@@ -394,9 +394,9 @@ function rps_print_test_breadcrumbs() {
   ?>
     <p class="breadcrumb-navigation test-breadcrumbs">
       <a href="<?php echo URL; ?>">xbrdr.com</a>
-      <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+      <img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="*" />
       <a href="<?php echo URL; ?>/testcenter/"><?php _e('Testcenter'); ?></a>
-      <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+      <img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="*" />
       <a class="active" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </p>
   <?php
@@ -677,23 +677,22 @@ function rps_get_product_information() {
       <div class="span12">
         <div class="row-fluid spaceme">
         <?php foreach ($properties as $property): ?>
-          <?php if (($i % 3) == 0): ?>
-          </div><div class="row-fluid spaceme">
+        <?php if (($i % 3) == 0): ?>
+        </div><div class="row-fluid spaceme">
           <?php endif; ?>
           <div class="span4 well property">
             <a class="ancor" id="goto-<?php echo($i + 1); ?>" href="#">&nbsp;</a>
             <span class="well-icon">
               <img src="<?php echo $property['icon']; ?>" alt="<?php echo esc_attr($property['title']); ?>">
             </span>
-            <h3>
-              <?php echo $property['titel']; ?>
-            </h3>
+            <h3><?php echo $property['titel']; ?></h3>
             <?php echo $property['text']; ?>
           </div>
-      <?php $i++; endforeach; ?>
+        <?php $i++; endforeach; ?>
+        </div>
       </div>
     </div>
-  <?php endif; ?>
+    <?php endif; ?>
   </section>
   <?php if ($specs): ?>
   <section id="spec">

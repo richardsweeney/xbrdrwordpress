@@ -4,11 +4,11 @@
   <?php rps_print_secondary_navigation(); ?>
   <p class="breadcrumb-navigation">
     <a href="<?php echo URL; ?>">xbrdr.com</a>
-    <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+    <img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="" />
     <a href="<?php echo URL; ?>/om-oss/detta-ar-crossborder/">Om Oss</a>
-    <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+    <img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="" />
     <a href="<?php echo URL; ?>/om-oss/press/">Press</a>
-    <img src="<?php echo IMG; ?>/breadcrumbs.jpg" />
+    <img src="<?php echo IMG; ?>/breadcrumbs.jpg" alt="" />
     <a class="active" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </p>
   <div class="tab-pane active" id="press">
@@ -33,4 +33,6 @@
         </article>
       <?php endwhile; wp_reset_query(); ?>
       </div>
+    </div>
+  </div>
       <?php get_footer(); ?>

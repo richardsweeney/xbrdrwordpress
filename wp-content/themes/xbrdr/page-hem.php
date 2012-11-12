@@ -19,7 +19,7 @@
       <span id="chapter1" class="pointer"></span>
 
       <ul class="sequence-block" id="unbuild">
-        <li class="first"><img class="sequence-img" id="img-0" src="<?php echo IMG; ?>/sequence/01.jpg" /></li>
+        <li class="first"><img class="sequence-img" id="img-0" src="<?php echo IMG; ?>/sequence/01.jpg" alt="Pall" /></li>
       </ul>
 
       <article class="gom text-content section-text" id="chapter1-text">
@@ -37,7 +37,7 @@
 
       <div class="image-container">
 
-        <img id="chapter-2-special-img" src="<?php echo IMG; ?>/pallar/pall.jpg" />
+        <img id="chapter-2-special-img" src="<?php echo IMG; ?>/pallar/pall.jpg" alt="Pall" />
 
         <div class="chapter2-icons-container">
 
@@ -82,7 +82,7 @@
 
       <div class="image-container">
 
-        <img id="chapter3-image" class="gom image-with-pointers" src="<?php echo IMG; ?>/pallar/ekonomi.jpg" />
+        <img id="chapter3-image" class="gom image-with-pointers" src="<?php echo IMG; ?>/pallar/ekonomi.jpg" alt="Pall" />
 
         <div class="chapter3-icons-container">
 
@@ -122,7 +122,7 @@
 
       <div class="image-container">
 
-        <img id="chapter4-image" class="gom image-with-pointers" src="<?php echo IMG; ?>/pallar/arbetsmiljo.jpg" />
+        <img id="chapter4-image" class="gom image-with-pointers" src="<?php echo IMG; ?>/pallar/arbetsmiljo.jpg" alt="Pall" />
 
         <div class="chapter4-icons-container">
 
@@ -157,7 +157,7 @@
 
       <div class="image-container">
 
-        <img id="chapter5-image" class="gom image-with-pointers" src="<?php echo IMG; ?>/pallar/miljo.jpg" />
+        <img id="chapter5-image" class="gom image-with-pointers" src="<?php echo IMG; ?>/pallar/miljo.jpg" alt="Pall" />
 
         <div class="chapter5-icons-container">
 

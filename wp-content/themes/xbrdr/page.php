@@ -46,7 +46,6 @@
           <?php the_content(); ?>
         </section>
       </div>
-    </div>
   <?php endif; ?>
 
 <?php endwhile; ?>
