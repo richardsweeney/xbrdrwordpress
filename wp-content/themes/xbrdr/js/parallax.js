@@ -49,7 +49,7 @@ jQuery(window).load(function () {
       $window = $(window),
       $winHeight = $window.height(),
       increment = 35,
-      throttle = 150,
+      throttle = 50,
       lessThrottle = 300,
       $parallaxImageContainer = $('#unbuild'),
       $slideshowImages,
@@ -103,7 +103,7 @@ jQuery(window).load(function () {
       for (i = 1; i < 18; i++) {
         var imgNo = (i < 10) ? '0' + i : i,
             $li = $('<li><img class="sequence-img gom" id="img-' + i + '" src="' + jsGlobals.templateDirectory +
-              '/images/sequence/' + imgNo + '.jpg" /></li>');
+              '/images/sequence/' + imgNo + '.jpg" alt="" /></li>');
         $parallaxImageContainer.append($li);
         if (i === 17) {
           $lastPall = $('#img-17').load(function () {
@@ -149,7 +149,7 @@ jQuery(window).load(function () {
         if (firstLoad === true) {
           $('img#img-' + thisPhase).removeClass('gom').addClass('visa');
           if (Modernizr.csstransitions === false) {
-            $('img#img-' + thisPhase).fadeIn(300);
+            $('img#img-' + thisPhase).show();
           }
         } else {
           if (lastPhase !== phase) {
