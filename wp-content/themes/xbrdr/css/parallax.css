@@ -595,7 +595,7 @@ strong { color:#76b729; }
 
 @media (max-width: 767px) {
   .scroll-arrow {
-    top: 380px;
+    top: 450px;
   }
   .text-content {
     margin-top: -80px !important;
