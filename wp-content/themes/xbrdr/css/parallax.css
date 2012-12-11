@@ -576,14 +576,16 @@ strong { color:#76b729; }
     width: 45%;
     max-width: 300px;
   }
+  #chapter2-text {
+    padding-top: 30px;
+  }
   ul.icons.visa {
    left: 52%;
   }
   .laning-page.map-block {
     position: fixed;
     top: 160px;
-    left: auto;
-    right: 5%;
+    left: 300px;
     margin: 50px 0 0 0;
     width: 50%;
     height: auto;
@@ -613,6 +615,15 @@ strong { color:#76b729; }
     left: auto;
     right: 0;
     width: 50%;
+  }
+  .laning-page.map-block {
+    position: fixed;
+    top: 160px;
+    left: auto;
+    right: 5%;
+    margin: 50px 0 0 0;
+    width: 50%;
+    height: auto;
   }
   ul.icons.visa {
     display: none;
